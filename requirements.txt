@@ -1,0 +1,16 @@
+streamlit
+pymongo
+dnspython
+
+
+llama-index
+python-dotenv
+llama_parse
+
+llama-index-vector-stores-pinecone
+qdrant_client
+llama-index-vector-stores-qdrant
+pinecone
+protoc_gen_openapiv2
+
+google-generativeai
