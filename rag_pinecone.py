@@ -10,11 +10,9 @@ from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.indices.postprocessor import SimilarityPostprocessor
 from llama_index.llms.openai import OpenAI
-from llama_index.llms.groq import Groq
 from llama_index.vector_stores.pinecone import PineconeVectorStore
 from pinecone.grpc import PineconeGRPC
 from pinecone import ServerlessSpec
-import google.generativeai as genai
 
 
 class APIKeysManager:
@@ -26,8 +24,7 @@ class APIKeysManager:
             "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY"),
             "PINECONE_API_KEY": os.getenv("PINECONE_API_KEY"),
             "LLAMAPARSER_API_KEY": os.getenv("LLAMAPARSER_API_KEY"),
-            "GROQ_API_KEY": os.getenv("GROQ_API_KEY"),
-            "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY"),
+            "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY")
         }
         self.validate_keys()
 
