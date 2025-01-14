@@ -11,7 +11,6 @@ class OPENAI_LLM:
     def __init__(self):
         load_dotenv()
         OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-        print(OPENAI_API_KEY)
         if not OPENAI_API_KEY:
             raise ValueError("OpenAI API key is missing. Ensure it is set in the .env file.")
 
@@ -74,7 +73,6 @@ class GEMINI_LLM:
     def __init__(self):
         load_dotenv()
         GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-        print(GEMINI_API_KEY)
         if not GEMINI_API_KEY:
             raise ValueError("OpenAI API key is missing. Ensure it is set in the .env file.")
 

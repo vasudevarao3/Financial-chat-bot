@@ -15,8 +15,6 @@ class LogInSignUp:
         self.auth_collection = self.db["auth"]
         self.history_collection = self.db["history"]
         print(f"Connected to MongoDB database: {self.db.name} and collections: {self.auth_collection.name}, {self.history_collection.name}")
-        # print(self.auth_collection)
-        # print(self.history_collection)
 
 
     def hash_password(self, password):
