@@ -74,7 +74,7 @@ class GEMINI_LLM:
         load_dotenv()
         GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
         if not GEMINI_API_KEY:
-            raise ValueError("OpenAI API key is missing. Ensure it is set in the .env file.")
+            raise ValueError("Gemini API key is missing. Ensure it is set in the .env file.")
 
         genai.configure(api_key=GEMINI_API_KEY)
         self.llm = genai.GenerativeModel(model_name = "gemini-1.5-flash")
